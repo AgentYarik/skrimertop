@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-image: url(https://wallpaperaccess.com/full/3910455.jpg);
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+.header {
+}
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-photo {
+    width: 80px;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.header__menu {
+    display: flex;
+    margin: 0 auto;
+}
+.header__menu-item {
+    margin: 0px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+.header__menu-item:hover{
+    color: white;
+}
+.header__menu-item:hover{
+    background-color: rgb(57, 57, 211);
+    transition: 1s;
+    transform: translateY(-10px);
+}
+.text_button{
+    color: white;
+    font-size: 25px;
+    padding: 15px 30px;
+    margin-right: 50px;
+    animation: tanos 3s linear infinite;
+    border-radius: 5px;
+}
+@keyframes tanos{
+    0%{
+        background-color: white;
+    }
+    25%{
+        background-color: red;
+    }
+    50%{
+        background-color: black;
+    }
+    75%{
+        background-color: blue;
+    }
+    100%{
+        background-color: blueviolet;
+    }
+}
+.audio__box{
+    display: flex;
+    margin-top: 100px;
+}
+.audio-container {
+    max-width: 400px;
+    height: 470px;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://oir.mobi/uploads/posts/2021-03/1616573469_4-p-krasivii-fon-gradient-4.jpg);
+    padding: 30px 30px;
+}
+.muzik-image {
+    width: 200px;
+    align-items: center;
+    padding-top: 20px;
+}
+.audio-player {
+    margin-top: 50px;
+    text-align: center;
+}
+p{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.input-audio-1 {
+    display: none;
+}
+.label-audio-1 {
+}
+.button-audio {
+    padding: 20px 35px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    cursor: pointer;
+    margin-top: 6px;
+}
+.block-info {
+    position: absolute;
+    background-color: white;
+    transform: translateX(-700px);
+    transition: 1s;
+    max-width: 400px;
+}
+.input-audio-1[type="checkbox"]:checked ~ .block-info{
+    background-color: yellow;
+    transform: translateX(355px);
+}
+.audio-container-2 {
+    max-width: 400px;
+    height: 470px;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://i.pinimg.com/originals/fe/15/d6/fe15d62198d0f16555034a6972a19d41.png);
+    padding: 30px 30px;
+}
+.muzik-image-2 {
+    width: 200px;
+    height: 250px;
+    align-items: center;
+    padding-top: 20px;
+}
+.audio-player-2 {
+    margin-top: 20px;
+}
+.input-audio-2 {
+    display: none;
+}
+.label-audio-2 {
+}
+.button-audio-1 {
+    padding: 20px 35px;
+    background-color: rgb(77, 77, 211);
+    cursor: pointer;
+    margin-top: 6px;
+}
+.block-infos {
+    position: absolute;
+    background-color: white;
+    transform: translateX(650px);
+    transition: 1s;
+    max-width: 300px;
+}
+.input-audio-2[type="checkbox"]:checked ~ .block-infos{
+    background-color: rgb(16, 137, 218);
+    transform: translateX(300px);
+}
+.input-audio-1[type="checkbox"]:checked ~ .label-audio-1 .button-audio{
+    background-color: rgba(89, 209, 93, 0.459);
+    padding: 5px 10px;
+    transition: 1s;
+}
+.input-audio-2[type="checkbox"]:checked ~ .label-audio-2 .button-audio-1{
+    background-color: rgba(76, 176, 201, 0.76);
+    padding: 5px 10px;
+    transition: 1s;
+}
+.skrimer {
+    color: white;
+    padding: 15px 25px;
+    border-radius: 6px;
+    background-color: red;
+}
